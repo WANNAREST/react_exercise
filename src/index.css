@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1, h4 {
+  color: #333;
+}
+
+/* --- Table Styles --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+/* --- Form & Button Styles --- */
+input[type="text"] {
+  padding: 8px;
+  margin: 5px 5px 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.btn-delete {
+  background-color: #f44336;
+}
+
+/* --- Modal Styles (Từ PDF) --- */
+/* [cite: 199] */
+.modal-overlay {
+  position: fixed; /* [cite: 200] */
+  top: 0; /* [cite: 201] */
+  left: 0; /* [cite: 202] */
+  width: 100%; /* [cite: 203] */
+  height: 100%; /* [cite: 204] */
+  background: rgba(0, 0, 0, 0.4); /* [cite: 205] */
+  display: flex; /* [cite: 206] */
+  justify-content: center; /* [cite: 209] */
+  align-items: center; /* [cite: 210] */
+  z-index: 999; /* [cite: 211] */
+}
+
+/* [cite: 213] */
+.modal-content {
+  background: #fff; /* [cite: 215] */
+  padding: 20px; /* [cite: 216] */
+  border-radius: 6px; /* [cite: 217] */
+  width: 350px; /* [cite: 218] */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-content input[type="text"] {
+  width: calc(100% - 20px);
+}
